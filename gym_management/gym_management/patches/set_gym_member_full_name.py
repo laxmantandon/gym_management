@@ -1,8 +1,7 @@
 import frappe
 
 def execute():
-    members = frappe.get_all("Gym Member")
+    members = frappe.get_all("Gym Member", fields=["name", "first_name","last_name", "full_name"])
 
-    if len(members) > 0:
-        for member in members:
-            frappe.db.set_value("Gym Member", member, {"full_name": f"{member.first_name} {member.last_name}"})
+    for member in members:
+        frappe.db.set_value("Gym Member", member.name, {"full_name": f"{member.first_name} {member.last_name}"})
