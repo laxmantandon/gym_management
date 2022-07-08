@@ -1,0 +1,1 @@
+gym_management.gym_management.patches.set_gym_member_full_name
