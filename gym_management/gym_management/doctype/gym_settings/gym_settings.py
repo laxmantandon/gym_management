@@ -4,6 +4,5 @@
 # import frappe
 from frappe.model.document import Document
 
-class GymTrainer(Document):
-	def validate(self):
-		self.full_name = f"{self.first_name} {self.last_name}"
+class GymSettings(Document):
+	pass

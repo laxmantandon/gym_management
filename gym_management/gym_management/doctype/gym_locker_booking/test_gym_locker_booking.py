@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestLocker(FrappeTestCase):
+class TestGymLockerBooking(FrappeTestCase):
 	pass

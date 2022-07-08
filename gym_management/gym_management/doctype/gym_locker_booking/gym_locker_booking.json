@@ -1,8 +1,8 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:M-{MM}-{YY}-{####}",
- "creation": "2022-07-02 18:54:39.312704",
+ "autoname": "format:L-{MM}-{YY}-{####}",
+ "creation": "2022-07-06 12:26:01.342127",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -14,7 +14,7 @@
   "section_break_5",
   "member",
   "full_name",
-  "membership_plan",
+  "locker_id",
   "section_break_7",
   "start_date",
   "column_break_8",
@@ -25,12 +25,20 @@
  ],
  "fields": [
   {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
    "default": "Today",
    "fieldname": "posting_date",
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Date",
    "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
   },
   {
    "default": "Now",
@@ -41,63 +49,7 @@
    "reqd": 1
   },
   {
-   "default": "Today",
-   "fieldname": "start_date",
-   "fieldtype": "Date",
-   "label": "Start Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "end_date",
-   "fieldtype": "Date",
-   "label": "End Date",
-   "reqd": 1
-  },
-  {
-   "fieldname": "amount",
-   "fieldtype": "Currency",
-   "label": "Amount",
-   "reqd": 1
-  },
-  {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "Gym Membership",
-   "print_hide": 1,
-   "read_only": 1
-  },
-  {
-   "fieldname": "membership_plan",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Membership Plan",
-   "options": "Membership Plan",
-   "reqd": 1
-  },
-  {
-   "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_1",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "section_break_5",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "column_break_8",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "column_break_11",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_7",
    "fieldtype": "Section Break"
   },
   {
@@ -114,15 +66,71 @@
    "fieldtype": "Data",
    "label": "Full Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "locker_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Locker Id",
+   "options": "Gym Locker",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Locker Booking",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Gym Locker Booking",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-07-07 01:08:53.832998",
+ "modified": "2022-07-07 01:14:12.548525",
  "modified_by": "Administrator",
  "module": "Gym Management",
- "name": "Gym Membership",
+ "name": "Gym Locker Booking",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

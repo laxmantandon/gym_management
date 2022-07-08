@@ -20,7 +20,9 @@
   "address_2",
   "column_break_14",
   "state",
-  "city"
+  "city",
+  "time_slots_section",
+  "timeslot"
  ],
  "fields": [
   {
@@ -94,12 +96,24 @@
    "fieldname": "city",
    "fieldtype": "Data",
    "label": "City"
+  },
+  {
+   "fieldname": "time_slots_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Time Slots"
+  },
+  {
+   "fieldname": "timeslot",
+   "fieldtype": "Table",
+   "label": "TimeSlot",
+   "options": "Gym Time Slot"
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-03 10:59:02.167030",
+ "modified": "2022-07-07 00:43:11.790240",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Trainer",
@@ -135,5 +149,6 @@
  "search_fields": "full_name",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }
