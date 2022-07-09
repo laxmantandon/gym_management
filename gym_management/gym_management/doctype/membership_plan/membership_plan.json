@@ -9,7 +9,8 @@
  "field_order": [
   "plan_name",
   "amount",
-  "duration"
+  "duration",
+  "is_group_class"
  ],
  "fields": [
   {
@@ -28,11 +29,17 @@
    "fieldname": "duration",
    "fieldtype": "Int",
    "label": "Duration"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group_class",
+   "fieldtype": "Check",
+   "label": "Is Group Class"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-02 19:01:44.442471",
+ "modified": "2022-07-10 04:33:16.534316",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Membership Plan",

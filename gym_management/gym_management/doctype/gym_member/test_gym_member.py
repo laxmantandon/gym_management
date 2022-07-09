@@ -17,7 +17,7 @@ class TestGymMember(FrappeTestCase):
 				"doctype": "Gym Member",
 				"first_name": "_Test",
 				"last_name": "_Test Last Name",
-				"contact": "9926100041",
+				"contact": "+91-9926100041",
 				"address_1": "Main Road",
 				"city": "Raipur",
 				"state": "Chhattisgarh",

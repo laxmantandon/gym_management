@@ -6,19 +6,20 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "tst"
+  "default_payment_mode"
  ],
  "fields": [
   {
-   "fieldname": "tst",
-   "fieldtype": "Data",
-   "label": "tst"
+   "fieldname": "default_payment_mode",
+   "fieldtype": "Select",
+   "label": "Default Payment Mode",
+   "options": "\nCash\nUPI\nCheque"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2022-07-07 00:59:29.146895",
+ "modified": "2022-07-10 04:16:12.575660",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Settings",

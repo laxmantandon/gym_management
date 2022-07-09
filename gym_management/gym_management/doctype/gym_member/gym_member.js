@@ -25,6 +25,12 @@ frappe.ui.form.on('Gym Member', {
 				})
 			}, __("Create"));	
 
+			frm.add_custom_button('Group Class Booking', () => {
+				frappe.new_doc('Gym Group Class Booking', {
+					member: frm.doc.name
+				})
+			}, __("Create"));	
+
 			frm.add_custom_button('Statement of Account', () => {
 				frappe.set_route('gym-gl-entries/view/report', { ledger_name : frm.doc.name, status: "Submitted"})
 			}, __("View"));				

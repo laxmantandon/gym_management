@@ -121,7 +121,7 @@
  ],
  "image_field": "image",
  "links": [],
- "modified": "2022-07-03 12:54:24.142618",
+ "modified": "2022-07-10 04:24:25.794929",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Member",
@@ -154,7 +154,7 @@
    "write": 1
   }
  ],
- "search_fields": "full_name",
+ "search_fields": "full_name, first_name, last_name",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [
