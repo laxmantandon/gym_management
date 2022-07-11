@@ -131,6 +131,12 @@ app_license = "MIT"
 # 	],
 # }
 
+scheduler_events = {
+	"All": [
+		"gym_management.gym_management.scheduled_tasks.gym_member_weekly_summary_mail"
+	]
+}
+
 # Testing
 # -------
 
@@ -193,3 +199,9 @@ app_license = "MIT"
 # Recommended only for DocTypes which have limited documents with untranslated names
 # For example: Role, Gender, etc.
 # translated_search_doctypes = []
+
+
+fixtures = [
+    { "dt": "Role", "filters": [["role_name", "like","Gym%"]]},
+    { "dt": "Workspace", "filters": [["module", "like","Gym%"]]}
+]

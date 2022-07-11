@@ -1,0 +1,29 @@
+{% extends "templates/web.html" %}
+
+{%- block title -%}{{_("Gym Workout Plan")}}{%- endblock -%}
+
+{% block page_content %}
+
+<div class="container">
+    {% for plan in plans %}
+    <div class="row">
+        <h2>{{plan.name}} </h2>
+
+        <div class="col-12">
+            <div class="row">
+                {% set workout_pan = frappe.get_doc("Gym Workout Plan", plan.name) %}
+
+                {% for workout in workout_pan.excercises %}
+                <div class="col-4">{{ workout.excercise_name }}</div>
+                <div class="col-8">{{ workout.description }}</div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}

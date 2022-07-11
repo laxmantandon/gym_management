@@ -1,0 +1,9 @@
+.card { 
+    margin-right: 10px;
+    padding: var(--padding-sm);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+
+}

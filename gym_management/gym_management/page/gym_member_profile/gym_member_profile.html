@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col card">
+            First Name : {{ data.member.first_name }}
+        </div>
+
+        <div class="col card">
+            Last Name : {{ data.member.last_name }}
+        </div>
+        <div class="col card">
+            Status : {{ data.member.status }}
+        </div>
+
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>Membership Plan</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+        </tr>
+        {% for m in data.membership %}
+        <tr>
+            <td>{{ m.membership_plan}}</td>
+            <td>{{ m.start_date}}</td>
+            <td>{{ m.end_date}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+
+    <div class="row">
+        <div class="col">
+            Recent Transactions
+            <table class="table table-bordered">
+                <tr>
+                    <td>Posting Date</td>
+                    <td>Particulars</td>
+                    <td>Debit</td>
+                    <td>Credit</td>
+                    <td>Description</td>
+                </tr>
+
+                {% for tr in data.transactions %}
+                <tr>
+                    <td>{{ tr.document_date }}</td>
+                    <td>{{ tr.document_type }}</td>
+                    <td>{{ tr.debit_amount }}</td>
+                    <td>{{ tr.credit_amount }}</td>
+                    <td>{{ tr.description }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+
+</div>

@@ -22,7 +22,9 @@
   "column_break_14",
   "city",
   "state",
-  "status"
+  "status",
+  "section_break_17",
+  "email"
  ],
  "fields": [
   {
@@ -117,11 +119,23 @@
    "fieldtype": "Select",
    "label": "status",
    "options": "Lead\nActive\nExpired\nInactive"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1,
+   "unique": 1
   }
  ],
  "image_field": "image",
  "links": [],
- "modified": "2022-07-10 04:24:25.794929",
+ "modified": "2022-07-10 11:24:14.313199",
  "modified_by": "Administrator",
  "module": "Gym Management",
  "name": "Gym Member",
